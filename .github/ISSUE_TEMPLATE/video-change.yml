@@ -1,0 +1,33 @@
+name: Improve the Sera introduction
+description: Request a scene, copy, design, or event-flow change.
+title: "[Promo] "
+body:
+  - type: textarea
+    id: request
+    attributes:
+      label: Request
+      description: Include @claude to ask Claude Code to implement the change. Requires the GitHub App and repository secret.
+      value: "@claude Please update the Sera introduction and open a pull request."
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Scene / page / expected result
+      placeholder: "At 00:17, make the difference between matching and settlement clearer."
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Official evidence for factual changes
+      description: Link Sera documentation. Distinguish live functionality from roadmap.
+  - type: checkboxes
+    id: review
+    attributes:
+      label: Acceptance criteria
+      options:
+        - label: Understandable without sound, in simple English
+        - label: Works on phone and in booth mode
+        - label: QR and Telegram links remain correct
+        - label: npm run check and npm test pass

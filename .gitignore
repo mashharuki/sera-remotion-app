@@ -5,3 +5,7 @@ dist
 
 # Ignore the output video from Git but not videos you import into src/.
 out
+.serena/
+public/sera-overview.mp4
+playwright-report/
+test-results/
