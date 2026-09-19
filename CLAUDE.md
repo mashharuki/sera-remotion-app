@@ -1,6 +1,6 @@
 # Sera event introduction
 
-Build a concise English introduction for stablecoin issuers, PSPs, neobanks and similar fintechs. The outcome is a qualified Telegram introduction, not a trading signup.
+Build a 30-second English introduction for Token2049 booths and networking. Create a concise introduction for stablecoin issuers, PSPs, neobanks and similar fintechs. The outcome is a qualified Telegram introduction, not a trading signup.
 
 - Read `docs/research.md` before changing factual claims. Do not invent rates, currencies available in production, partnerships, performance, revenue, APY, compliance, or guarantees. Distinguish off-chain matching from Ethereum settlement. Lending, FCICAMM, position NFTs and derivatives are roadmap, not demonstrated live functionality.
 - `src/content.ts` owns scene timing/copy and the canonical URL/Telegram destination. Keep the last scene, VTT, QR and duration synchronized.
@@ -11,3 +11,5 @@ Build a concise English introduction for stablecoin issuers, PSPs, neobanks and 
 - Work on a branch and open a PR. Never auto-merge, change credentials, or weaken workflow permissions. Review factual changes against cited sources.
 - Use `@claude` (not `@ClaudeCode`) in GitHub issues/comments after the app and secret are configured.
 - Never collect contact details in this public repository. `docs/event-playbook.md` is the event operator guide.
+
+- Supplied app screenshots are in `public/screen_shot`. Use 3/0/1/2 for wallet/swap/confirmation/history; 4/5 are unused source material. Do not portray recorded rates as live quotes. Keep the final QR steady for seven seconds.

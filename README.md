@@ -1,6 +1,6 @@
 # Sera — Bringing FX on-chain
 
-イベントで見せる52秒の英語Remotion動画と、スマホ対応のGitHub Pages。無音でも内容が伝わる構成。ダークグリーン、公式ロゴ、IBM Plex Sansを使用。
+Token2049のブース・立食イベントで見せる30秒の英語Remotion動画と、スマホ対応のGitHub Pages。無音でも内容が伝わる構成。ダークグリーン、公式ロゴ、IBM Plex Sansを使用。
 
 公開先: https://mashharuki.github.io/sera-remotion-app/
 
@@ -15,7 +15,7 @@ npm run studio        # Remotion Studio
 npm run check         # ESLint / TypeScript / 静的ビルド
 npx playwright install chromium
 npm test              # モバイル、再生、QR、CTA
-npm run render        # public/sera-overview.mp4 (52秒 / 1080p)
+npm run render        # public/sera-overview.mp4 (30秒 / 1080p)
 npm run render:still  # out/sera-poster.png
 ```
 
@@ -39,7 +39,7 @@ Repository Settings → Pages → Source を **GitHub Actions** に設定。`mai
 
 ## 編集場所
 
-- `src/content.ts`: 6シーンの英語原稿、時間、公開URL、Telegram。現在は公式コミュニティへの暫定リンク。
+- `src/content.ts`: 5シーンの英語原稿、時間、公開URL、Telegram。現在は公式コミュニティへの暫定リンク。
 - `src/Composition.tsx`, `src/video.css`: 動画。PlayerとMP4で同じReactコンポーネントを共有。
 - `src/main.tsx`, `src/index.css`: 公開ページ。
 - `scripts/generate-assets.mjs`: QR / WebVTT生成。

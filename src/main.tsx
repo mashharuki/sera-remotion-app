@@ -2,7 +2,14 @@ import { createRoot } from "react-dom/client";
 import { useEffect, useRef, useState } from "react";
 import { Player, type PlayerRef } from "@remotion/player";
 import { SeraFilm } from "./Composition";
-import { DURATION, FPS, scenes, site, sources } from "./content";
+import {
+  DURATION,
+  DURATION_SECONDS,
+  FPS,
+  scenes,
+  site,
+  sources,
+} from "./content";
 import "./index.css";
 
 const base = import.meta.env.BASE_URL;
@@ -73,7 +80,7 @@ function App() {
             <div className="hero-actions">
               <button className="primary" onClick={play}>
                 <span className="play-symbol">▶</span> Watch the story{" "}
-                <small>52 sec</small>
+                <small>{DURATION_SECONDS} sec</small>
               </button>
               <a className="text-link" href="#connect">
                 Build with Sera ↗

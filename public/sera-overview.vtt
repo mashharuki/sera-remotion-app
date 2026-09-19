@@ -1,31 +1,26 @@
 WEBVTT
 
-00:00:00.000 --> 00:00:08.000
-Money moves. Currencies differ.
-Your customers cross borders. Their payments need to cross currencies.
-A global payment needs more than a dollar token.
+00:00:00.000 --> 00:00:04.000
+Different currencies. One Sera.
+Stablecoin FX, with settlement on-chain.
+For issuers, payment providers and neobanks.
 
-00:00:08.000 --> 00:00:17.000
-Different currencies. One on-chain exchange.
-FX means exchanging one currency for another. On-chain FX does it with stablecoins.
-Stablecoins are tokens designed to track a currency’s value.
+00:00:04.000 --> 00:00:10.000
+Swap across currencies.
+Exchange one currency’s stablecoin for another.
+Choose the tokens you want to exchange.
 
-00:00:17.000 --> 00:00:27.000
+00:00:10.000 --> 00:00:17.000
+See your swap complete.
+A clear result, with a transaction link.
+Recorded app example · Displayed amounts are not a current quote.
+
+00:00:17.000 --> 00:00:23.000
 Match off-chain. Settle on-chain.
-Sera matches stablecoin orders off-chain. Trades settle through Ethereum smart contracts.
-An exchange for stablecoins. A settlement layer to build on.
+Sera matches orders. Ethereum settles trades.
+Review transaction status and follow the on-chain record.
 
-00:00:27.000 --> 00:00:35.000
-Build around better money movement.
-Programmatic access. Verifiable settlement. Funds held in smart contracts, not by the matching engine.
-Availability, liquidity and costs depend on the market and network.
-
-00:00:35.000 --> 00:00:43.000
-Your next corridor could start here.
-Stablecoin issuer? Payment provider? Neobank? Let’s explore the currencies your customers need.
-Discuss liquidity, FX conversion and settlement integration.
-
-00:00:43.000 --> 00:00:52.000
-Which currencies are you connecting?
-Meet Sera on Telegram. Bring your corridor. Start a conversation.
-Scan to watch again and open the Sera community.
+00:00:23.000 --> 00:00:30.000
+Your currencies. Let’s connect.
+Meet Sera on Telegram.
+Scan to watch again and start a conversation.

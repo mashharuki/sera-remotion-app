@@ -15,7 +15,7 @@
 
 “What currencies do your customers need to exchange?”
 
-映像は52秒。時間がなければ 00:17「Meet Sera」から再生。ブースではBooth modeで繰り返し再生。QRは同じ公開ページにつながる。
+映像は30秒。時間がなければ 00:04「Swap」から再生。ブースではBooth modeで繰り返し再生。QRは同じ公開ページにつながる。
 
 ## Qualified Contact として数える条件
 
