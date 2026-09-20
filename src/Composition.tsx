@@ -19,7 +19,14 @@ const Scene = ({ index, assetBase }: { index: number; assetBase?: string }) => {
   const enter = interpolate(frame, [0, 12], [0, 1], {
     extrapolateRight: "clamp",
   });
-  // Keep the CTA and QR steady for the entire final seven seconds.
+  const drift = interpolate(frame, [0, s.seconds * FPS - 1], [1.035, 1], {
+    extrapolateRight: "clamp",
+  });
+  const calloutEnter = interpolate(frame, [10, 22], [0, 1], {
+    extrapolateLeft: "clamp",
+    extrapolateRight: "clamp",
+  });
+  // Keep the CTA and QR steady for the entire final scene.
   const motion = isClosing ? 1 : enter;
   return (
     <AbsoluteFill
@@ -35,14 +42,20 @@ const Scene = ({ index, assetBase }: { index: number; assetBase?: string }) => {
         <div className="scene-label">{s.label}</div>
         <h1>{s.title}</h1>
         <p>{s.body}</p>
-        {index === 1 && (
-          <div className="pair-label">
-            <span>USDT</span>
-            <b>→</b>
-            <span>JPYC</span>
+        {s.flowStep !== null && (
+          <div className="journey-steps" aria-label="Product walkthrough">
+            {["Deposit", "Position", "Cashback"].map((step, stepIndex) => (
+              <div
+                className={s.flowStep === stepIndex + 1 ? "active" : ""}
+                key={step}
+              >
+                <b>0{stepIndex + 1}</b>
+                <span>{step}</span>
+              </div>
+            ))}
           </div>
         )}
-        {index === 3 && (
+        {s.screenshot === 2 && (
           <div className="architecture-label">
             <span>Off-chain matching</span>
             <b>↓</b>
@@ -75,11 +88,23 @@ const Scene = ({ index, assetBase }: { index: number; assetBase?: string }) => {
             <Img
               src={asset(`screen_shot/${s.screenshot}.jpg`, assetBase)}
               alt={s.screenLabel}
+              style={{ transform: `scale(${drift})` }}
             />
+            {s.callout && (
+              <div
+                className="screen-callout"
+                style={{
+                  opacity: calloutEnter,
+                  transform: `translateY(${(1 - calloutEnter) * 12}px)`,
+                }}
+              >
+                <span>IN THIS STEP</span>
+                <strong>{s.callout}</strong>
+              </div>
+            )}
           </div>
           <div className="screen-note">
-            Recorded app screen · {s.screenshot === 3 ? "English" : "Japanese"}{" "}
-            interface
+            Recorded app screen · {s.language} interface
           </div>
         </div>
       )}

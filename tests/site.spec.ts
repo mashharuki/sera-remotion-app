@@ -1,7 +1,7 @@
 import { test, expect } from "@playwright/test";
 import { scenes, DURATION, FPS } from "../src/content";
 
-test("30-second timeline keeps seven seconds for the QR", () => {
+test("30-second timeline includes the three-step walkthrough", () => {
   expect(DURATION / FPS).toBe(30);
   let end = 0;
   for (const scene of scenes) {
@@ -9,7 +9,8 @@ test("30-second timeline keeps seven seconds for the QR", () => {
     end += scene.seconds;
   }
   expect(end).toBe(30);
-  expect(scenes.at(-1)?.seconds).toBe(7);
+  expect(scenes.at(-1)?.seconds).toBe(6);
+  expect(scenes.filter((scene) => scene.flowStep !== null).length).toBe(3);
 });
 
 test("event journey: no overflow, playable film, chapter and contact", async ({
@@ -31,9 +32,11 @@ test("event journey: no overflow, playable film, chapter and contact", async ({
   await page.getByRole("button", { name: "Watch the story" }).click();
   for (const [chapter, file] of [
     ["00:00 Meet Sera", "3"],
-    ["00:04 Swap", "0"],
-    ["00:10 Confirm", "1"],
-    ["00:17 Verify", "2"],
+    ["00:03 01 · Deposit", "6"],
+    ["00:07 02 · Create position", "7"],
+    ["00:12 03 · Cashback", "8"],
+    ["00:16 Direct swap", "0"],
+    ["00:20 Verify", "2"],
   ]) {
     await page.getByRole("button", { name: chapter }).click();
     const capture = page.locator(".screen-frame img");
@@ -49,7 +52,7 @@ test("event journey: no overflow, playable film, chapter and contact", async ({
       )
       .toBe(true);
   }
-  await page.getByRole("button", { name: "00:17 Verify" }).click();
+  await page.getByRole("button", { name: "00:20 Verify" }).click();
   await expect(
     page.getByRole("heading", { name: "Match off-chain. Settle on-chain." }),
   ).toBeVisible();
@@ -59,7 +62,7 @@ test("event journey: no overflow, playable film, chapter and contact", async ({
   await expect(
     page.getByRole("link", { name: "Open Sera community" }),
   ).toHaveAttribute("href", "https://t.me/seraprotocol");
-  await page.getByRole("button", { name: "00:23 Let’s connect" }).click();
+  await page.getByRole("button", { name: "00:24 Let’s connect" }).click();
   await expect(page.locator(".video-qr img")).toBeVisible();
   await expect
     .poll(() =>

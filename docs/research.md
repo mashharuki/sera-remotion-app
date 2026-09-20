@@ -32,17 +32,19 @@ Re-edited 2026-09-19 for brief booth and standing-reception introductions. This 
 
 | Time  | Message                                   | User-provided screenshot               |
 | ----- | ----------------------------------------- | -------------------------------------- |
-| 00–04 | Stablecoin FX, with settlement on-chain   | 3.jpg: English wallet overview         |
-| 04–10 | Exchange currency stablecoins             | 0.jpg: Japanese USDT / JPYC swap form  |
-| 10–17 | See a completed swap and transaction link | 1.jpg: Japanese swap receipt           |
-| 17–23 | Off-chain matching / Ethereum settlement  | 2.jpg: Japanese transaction history    |
-| 23–30 | Telegram conversation                     | Stationary QR to the introduction page |
+| 00–03 | Stablecoins in one Sera app                | 3.jpg: English wallet overview          |
+| 03–07 | Fund the exchange balance                 | 6.jpg: English USDC deposit modal        |
+| 07–12 | Allocate one amount to two target tokens  | 7.jpg: English position creation screen  |
+| 12–16 | Browse and track cashback                 | 8.jpg: English cashback store directory  |
+| 16–20 | Exchange currency stablecoins             | 0.jpg: Japanese USDT / JPYC swap form    |
+| 20–24 | Off-chain matching / Ethereum settlement  | 2.jpg: Japanese transaction history      |
+| 24–30 | Telegram conversation                     | Stationary QR to the introduction page  |
 
-English headlines explain the Japanese UI without altering the supplied screenshots. Screens are recorded examples, not a live quote or proof of present market availability. The history includes a failed transaction; no universal-success claim is made. No image is presented as footage of an interaction we performed.
+English headlines explain the walkthrough without altering the supplied screenshots. Screens are recorded examples, not a live quote or proof of present market availability. Deposit amounts, target rates, cashback rates and payout timing are explicitly framed as illustrative or variable. The history includes a failed transaction; no universal-success claim is made. No image is presented as footage of an interaction we performed.
 
-All six supplied screenshots were reviewed. 4.jpg (position form with insufficient funds) and 5.jpg (cashback offers) are retained as source material but excluded from the short FX introduction. Their presence does not establish lending, yield or cashback promises in this film.
+All nine supplied screenshots were reviewed. The newly supplied 6.jpg, 7.jpg and 8.jpg replace the earlier position and cashback captures because they show a complete deposit, allocation and store-discovery flow more clearly. The film describes only what is visible in those recorded screens and makes no yield, availability or payout guarantee.
 
-The film has no voiceover or music, so the story works in a noisy venue. The final QR remains steady for seven seconds and points to the landing page so future contact changes do not invalidate printed copies. English WebVTT and page copy are updated alongside the film.
+The film has no voiceover or music, so the story works in a noisy venue. The final QR remains steady for six seconds and points to the landing page so future contact changes do not invalidate printed copies. English WebVTT and page copy are updated alongside the film.
 
 ## Reference implementations and tooling
 

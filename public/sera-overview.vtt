@@ -1,26 +1,36 @@
 WEBVTT
 
-00:00:00.000 --> 00:00:04.000
+00:00:00.000 --> 00:00:03.000
 Different currencies. One Sera.
-Stablecoin FX, with settlement on-chain.
-For issuers, payment providers and neobanks.
+Fund, exchange and use stablecoins from one place.
+A recorded walkthrough of the Sera app.
 
-00:00:04.000 --> 00:00:10.000
-Swap across currencies.
-Exchange one currency’s stablecoin for another.
-Choose the tokens you want to exchange.
+00:00:03.000 --> 00:00:07.000
+Start with your balance.
+Move USDC from your wallet into the exchange balance.
+Recorded example · Deposit amounts are illustrative.
 
-00:00:10.000 --> 00:00:17.000
-See your swap complete.
-A clear result, with a transaction link.
-Recorded app example · Displayed amounts are not a current quote.
+00:00:07.000 --> 00:00:12.000
+Set one amount. Choose outcomes.
+Allocate 50 USDC across USDT and JPYC targets.
+Recorded example · Displayed rates are not a current quote.
 
-00:00:17.000 --> 00:00:23.000
+00:00:12.000 --> 00:00:16.000
+Shop through Sera. Track cashback.
+Choose a listed store, then follow rewards through payout.
+Availability, rates and payout timing vary by store.
+
+00:00:16.000 --> 00:00:20.000
+Or swap directly.
+Choose the stablecoins and amount you want to exchange.
+Recorded example · Displayed amounts are not a current quote.
+
+00:00:20.000 --> 00:00:24.000
 Match off-chain. Settle on-chain.
 Sera matches orders. Ethereum settles trades.
 Review transaction status and follow the on-chain record.
 
-00:00:23.000 --> 00:00:30.000
+00:00:24.000 --> 00:00:30.000
 Your currencies. Let’s connect.
 Meet Sera on Telegram.
 Scan to watch again and start a conversation.
